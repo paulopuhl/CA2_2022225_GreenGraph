@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-favorites',
-  templateUrl: './favorites.page.html',
-  styleUrls: ['./favorites.page.scss'],
+  templateUrl: 'favorites.page.html',
+  styleUrls: ['favorites.page.scss'],
 })
-export class FavoritesPage implements OnInit {
+export class FavoritesPage {
+  favoritePhotos: string[] = []; // Assuming you have a property for favoritePhotos
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
+    // Initialize favoritePhotos array
   }
-
 }
