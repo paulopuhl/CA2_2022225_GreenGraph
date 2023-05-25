@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class GalleryPage {
   constructor() {
-    // Add your logic here
+    
   }
 }

@@ -8,12 +8,16 @@ import { CameraPageRoutingModule } from './camera-routing.module';
 
 import { CameraPage } from './camera.page';
 
+import {ExploreContainerComponentModule} from '../explore-container/explore-container.module'
+
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CameraPageRoutingModule
+    CameraPageRoutingModule,
+    ExploreContainerComponentModule
   ],
   declarations: [CameraPage]
 })

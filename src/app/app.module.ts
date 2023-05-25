@@ -4,7 +4,7 @@ import { IonicModule, MenuController } from '@ionic/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomePageModule } from './home/home.module'; // Import the HomePageModule
+import { HomePageModule } from './home/home.module';
 import { GalleryPageModule } from './gallery/gallery.module';
 import { FavoritesPageModule } from './favorites/favorites.module';
 import { CameraPageModule } from './camera/camera.module';
@@ -16,7 +16,7 @@ import { CameraPageModule } from './camera/camera.module';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    HomePageModule, // Add the HomePageModule to the imports array
+    HomePageModule,
     GalleryPageModule,
     FavoritesPageModule,
     CameraPageModule

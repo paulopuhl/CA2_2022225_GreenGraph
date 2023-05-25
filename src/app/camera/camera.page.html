@@ -1,11 +1,33 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Camera</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button (click)="takePhoto()">Take Photo</ion-button>
-  <img [src]="capturedPhoto" *ngIf="capturedPhoto" alt="Captured Photo">
-  <!-- Additional content related to camera functionality -->
+  <ion-fab>
+    <ion-fab-button (click)="takePhoto()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4" *ngFor="let photo of photoService.photos; index as position">
+          <ion-img [src]="photo.webviewPath"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+
+  <app-explore-container name="Camera Page"></app-explore-container>
+
+
+ <!-- <ion-button (click)="takePhoto()">Take Photo</ion-button>
+  <img [src]="capturedPhoto" *ngIf="capturedPhoto" alt="Captured Photo"> -->
+
 </ion-content>

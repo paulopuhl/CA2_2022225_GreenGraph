@@ -25,7 +25,7 @@ export class AppComponent {
     {
       title: 'Gallery',
       url: '/gallery',
-      icon: 'gallery'
+      icon: ''
     },
   ];
 }
