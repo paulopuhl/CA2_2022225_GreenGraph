@@ -1,0 +1,7 @@
+{
+  "name": "CA2_2022225_GreenGraph",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
