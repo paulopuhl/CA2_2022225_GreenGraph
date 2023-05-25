@@ -1,13 +1,31 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>gallery</ion-title>
+    <ion-title>Gallery</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">gallery</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <img src="path_to_image" alt="Photo 1">
+          <ion-card-content>
+            <ion-title>Photo 1</ion-title>
+            <!-- Additional details or functionality for the photo -->
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <img src="path_to_image" alt="Photo 2">
+          <ion-card-content>
+            <ion-title>Photo 2</ion-title>
+            <!-- Additional details or functionality for the photo -->
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <!-- Additional rows or columns for more photos -->
+  </ion-grid>
 </ion-content>

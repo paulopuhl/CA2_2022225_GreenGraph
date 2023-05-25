@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-gallery',
-  templateUrl: './gallery.page.html',
-  styleUrls: ['./gallery.page.scss'],
+  templateUrl: 'gallery.page.html',
+  styleUrls: ['gallery.page.scss'],
 })
-export class GalleryPage implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+export class GalleryPage {
+  constructor() {
+    // Add your logic here
   }
-
 }

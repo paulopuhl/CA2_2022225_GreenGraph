@@ -1,34 +1,21 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+
+import { HomePage } from './home/home.page';
+import { GalleryPage } from './gallery/gallery.page';
+import { CameraPage } from './camera/camera.page';
+import { FavoritesPage } from './favorites/favorites.page';
 
 const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
-  {
-    path: 'gallery',
-    loadChildren: () => import('./gallery/gallery.module').then( m => m.GalleryPageModule)
-  },
-  {
-    path: 'favorites',
-    loadChildren: () => import('./favorites/favorites.module').then( m => m.FavoritesPageModule)
-  },
-  {
-    path: 'camera',
-    loadChildren: () => import('./camera/camera.module').then( m => m.CameraPageModule)
-  },
+  { path: 'home', component: HomePage },
+  { path: 'gallery', component: GalleryPage },
+  { path: 'camera', component: CameraPage },
+  { path: 'favorites', component: FavoritesPage },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
-  ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

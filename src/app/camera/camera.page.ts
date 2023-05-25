@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-camera',
-  templateUrl: './camera.page.html',
-  styleUrls: ['./camera.page.scss'],
+  templateUrl: 'camera.page.html',
+  styleUrls: ['camera.page.scss']
 })
-export class CameraPage implements OnInit {
+export class CameraPage {
+  capturedPhoto: string | null = null;
 
-  constructor() { }
-
-  ngOnInit() {
+  takePhoto(): void {
+    // Logic to handle taking a photo
   }
-
 }
